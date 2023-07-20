@@ -7,6 +7,7 @@
    --color-border: #ccc;
    --border-radius: 30px;
    --color-body-darker:#5c5577;
+   --color-footer: #232222;
 }
 
 *,*::after, *::before{
@@ -625,6 +626,7 @@ content: open-quote;
    color: #7b858b;
  }
 
+
  .block--dark .block__heading {
    color: #fff;
  }
@@ -830,3 +832,78 @@ object-fit:cover;
    max-width: 700px;
 }
 }
+
+/* Footer */
+
+.footer {
+   background: var(--color-footer);
+   padding: 4rem 0;
+ }
+
+ .footer a {
+   color: #777;
+
+ }
+
+ .footer a:hover {  
+   color: #fff;
+   transition: color 0.3s;
+
+ }
+
+ .footer__section {
+   padding: 2rem;
+   border-bottom: 1px solid #393939;
+   }
+
+   .footer__brand {
+      margin-top: 5rem;
+      text-align: center;
+   }
+.footer__brand img {
+ width: 100%;
+ max-width: 230px;
+}
+/* TODO: Lets check this rule if its possible to make it overall for all img */
+
+
+
+ .footer__copyright { 
+     font-size: 2.1rem;
+     color: #fff;
+     opacity: 0.3;
+
+     }
+
+     @media screen and (min-width: 768px) {
+          .footer__sections {
+            grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+
+          }
+
+          .footer .collapsible__chevron {
+            display: none;
+          }
+
+          .footer .collapsible__content {
+            opacity: 1;
+            max-height: 100%;
+          }
+
+          .footer__brand {
+            order: -1;
+            margin-top: 1rem;
+          }
+
+          .footer__copyright {
+            font-size: 1.5rem;
+          }
+
+          .footer__section {
+            border: 0;
+          }
+
+          .feature__heading {
+            font-size: 1.6rem;
+         }
+      }
