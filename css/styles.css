@@ -299,6 +299,7 @@ background: #2982F8;
    border:0;
    flex-grow: 1;
    padding: 1.5rem 2rem;
+   width: 0;
 }
 
 .input-group .btn {
